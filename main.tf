@@ -51,8 +51,8 @@ resource "aws_security_group" "allow_http" {
   }
 }
 
-data "aws_ssm_parameter" "dummyref" {
-  name = "secretdemo"
+data "aws_ssm_parameter" "secretref" {
+  name = "SECRETDEMO"
 }
 
 resource "aws_db_instance" "default" {
@@ -64,7 +64,7 @@ resource "aws_db_instance" "default" {
   instance_class       = var.db_instance_class
   name                 = "mydb"
   username             = "foo"
-  password             = data.aws_ssm_parameter.dummyref.value
+  password             = data.aws_ssm_parameter.secretref.value
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = "true"
 }
