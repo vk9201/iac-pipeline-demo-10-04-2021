@@ -18,10 +18,10 @@
             "instance_type": "t2.micro",
             "ssh_username": "ubuntu",
             "ami_name": "packer-ami-{{timestamp}}",
-            "ami_description": "Customized-Ubuntu-AMI",
+            "ami_description": "Customized-Ubuntu-AMI1",
             "tags": {
                 "Packer_Managed": "True",
-                "Team": "DevOps"
+                "Team": "DevOps1"
             }
         }
     ],
