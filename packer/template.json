@@ -1,6 +1,6 @@
 {
     "variables": {
-        "aws_region": "ap-south-1"
+        "aws_region": "east-1"
     },
     "builders": [
         {
