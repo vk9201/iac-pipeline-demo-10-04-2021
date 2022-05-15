@@ -52,7 +52,7 @@ resource "aws_security_group" "allow_http" {
 }
 
 data "aws_ssm_parameter" "secretref" {
-  name = "SECRETDEMO"
+  name = "secretdemo"
 }
 
 resource "aws_db_instance" "default" {
