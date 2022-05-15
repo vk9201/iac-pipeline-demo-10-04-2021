@@ -6,7 +6,7 @@
   vars:
     region: us-east-1
     state: present
-    bucket: cloudlogic20-tfstate
+    bucket: cloudlogic20-tfstate1
 
   tasks:
     - name: Create S3 bucket for storing TF remote states
