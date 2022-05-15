@@ -22,7 +22,7 @@ pipeline {
 
         stage ('TF Initialize') {
             steps {
-                sh "terraform init -input-files=true"
+                sh "terraform init -input=false"
             }
         }
 
